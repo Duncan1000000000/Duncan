@@ -1,381 +1,561 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Duncan_10</title>
-  
+   <meta charset="UTF-8">
+   <title>CodePen - Duncan_10</title>
+
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
-<html lang="et" >
-<head>
-  <meta charset="UTF-8">
-  <title>CV Printable A4</title>
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<html lang="et" >
+   <!-- partial:index.partial.html -->
+   <!DOCTYPE html>
+   <html lang="et">
+
    <head>
-      <title>Curriculum Vitae</title>
-      <meta name="viewport" content="width=device-width" />
-      <meta name="description" content="Margus Lillemagi - Curriculum Vitae" />
       <meta charset="UTF-8">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
-      <!--[if lt IE 9]>
+      <title>CV Printable A4</title>
+   </head>
+
+   <body>
+      <!-- partial:index.partial.html -->
+      <html lang="et">
+
+      <head>
+         <title>Curriculum Vitae</title>
+         <meta name="viewport" content="width=device-width" />
+         <meta name="description" content="Margus Lillemagi - Curriculum Vitae" />
+         <meta charset="UTF-8">
+         <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Lato:400,300' rel='stylesheet'
+            type='text/css'>
+         <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
-      <style>
-         body {
-         background: #fff; 
-         }
-         page {
-         background: #fff;
-         display: block;
-         margin: 0 auto;
-         margin-bottom: 5mm;
-         margin-top: 5mm;
-         }
-         page[size="A4"] {  
-         width: 210mm;
-         height: 297mm;
-         }
-         @page {
-         size: 210mm 297mm;
-         margin: 0; 
-         }
-         @media print { /* Print settings */
-         html, body, page {
-         width: 210mm;
-         height:100%;
-         margin: 0 !important; 
-         padding: 0 !important;
-         overflow: hidden; 
-         }
-         .no-overflow{
-         overflow: hidden; 
-         }
-         #Header, #Footer { 
-         display: none !important;
-         }
-         size: A4 portrait;
-         /* ... the rest of the rules ... */
-         }
-         html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
-         border:0;
-         font:inherit;
-         font-size:100%;
-         margin:0;
-         padding:0;
-         vertical-align:baseline;
-         }
-         article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-         display:block;
-         }
-         html, body {font-family: 'Lato', helvetica, arial, sans-serif; font-size: 11pt; color: #222;}
-         .clear {clear: both;}
-         p {
-         line-height: 15pt;
-         margin-bottom: 4mm;
-         color: #444;
-         word-break: break-word;
-         }
-         a {
-            text-decoration: none;
-         }
-         a:hover { 
-            text-decoration:underline;
-         }
-         a, .fa-check, .fa-arrow-right {
-         color: #da2d2d;
-         }
-         .cv {
-         width: 210mm;
-         height: 297mm;
-         background: #fff;
-         background-image: url("https://img.freepik.com/free-vector/hand-drawn-man-silhouette-playing-game_23-2149426007.jpg");
-         }
-         .mainDetails {
-         padding: 8mm 0 0 8mm;
-         background: #fff;
-         }
-         #name {
-         float: left;
-         text-transform: uppercase;
-         padding: 8.5mm 0 0 7mm;
-         }
-         #name h1 {
-         font-size: 33pt;
-         font-weight: 400;
-         font-family: 'Oswald', Helvetica, Arial, sans-serif;
-         line-height: 38pt;
-         color:#da2d2d;
-         }
-         #name h2 {
-         font-size: 18pt;
-         font-family: 'Oswald', Helvetica, Arial, sans-serif;
-         line-height: 20pt;
-         }
-         #mainArea, #mainAreaTwo {
-         padding: 0 8mm;
-         }
-         #headshot {
-         width: 46mm;
-         float: left;
-         margin-top:10mm;
-         margin-left:-.5mm;
-         }
-         #headshot img {
-         width: 100%;
-         height: auto;
-         -webkit-border-radius: 50%;
-         border-radius: 50%;
-         }
-         .contactDetails {
-         float:right;
-         margin:10mm 8mm 0  0;
-         float: right;
-         }
-         .contactDetails ul { 
-         list-style-type: none;
-         font-family: 'Oswald', Helvetica, Arial, sans-serif;
-         }
-         .contactDetails ul li {
-         line-height: 24pt;
-         color: #444;
-         }
-         .contactDetails ul li a, a[href^=tel] {
-         color: #444; 
-         padding: 4px 8px;
-         text-decoration: none;
-         -webkit-transition: all .1s ease-in;
-         -moz-transition: all .1s ease-in;
-         -o-transition: all .1s ease-in;
-         -ms-transition: all .1s ease-in;
-         transition: all .1s ease-in;
-         }
-         .contactDetails ul li a:hover { 
-         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-         color:#da2d2d;
-         }
-         .icon {
-         font-size: 14pt;
-         }
-         .bold{
-         font-weight:bold;
-         }
-         section {
-         border-top: 1mm dotted #444;
-         padding: 4mm 0 0 0;
-         }
-         section:first-child {
-         border-top: 0;
-         padding: 8mm 0 0 0;
-         }
-         section:last-child {
-         padding: 4mm 0 0 0;
-         }
-         .sectionTitle {
-         float: left;
-         width: 50mm;
-         margin-bottom:6mm; 
-         }
-         .sectionContent {
-         float: right;
-         width: 141mm;
-         }
-         .sectionTitle h1 {
-         font-family: 'Oswald', Helvetica, Arial, sans-serif;
-         font-weight: 400;
-         text-transform: uppercase;
-         font-size: 18pt;
-         color: #da2d2d;
-         }
-         .sectionContent h2 {
-         font-family: 'Oswald', Helvetica, Arial, sans-serif;
-         text-transform: uppercase;
-         font-size: 18pt;
-         }
-         .subDetails {
-         font-family: 'Lato', Helvetica, Arial, sans-serif;
-         font-size: 11pt;
-         font-weight:bold;
-         color: #da2d2d;
-         }
-         .nameDetails {
-         font-size: 11pt;
-         font-family: 'Lato', Helvetica, Arial, sans-serif;
-         color: #444;
-         }
-         .keySkills {
-         list-style-type: none;
-         -moz-column-count:3;
-         -webkit-column-count:3;
-         column-count:3;
-         margin-bottom: 4mm;
-         font-size: 11pt;
-         color: #444;
-         line-height: 15pt;
-         }
-         .keySkills ul li {
-         margin-bottom: 6mm;
-         }
-         .clients {
-         list-style-type: none;
-         -moz-column-count:1;
-         -webkit-column-count:1;
-         column-count:1;
-         margin-bottom: 4mm;
-         font-size: 11pt;
-         color: #444;
-         line-height: 15pt;
-         text-decoration: none;
-         }
-         .clients ul li {
-         margin-bottom: 6mm;
-         }
-         .list {
-         list-style-type: none;
-         -moz-column-count:1;
-         -webkit-column-count:1;
-         column-count:1;
-         margin-bottom: 4mm;
-         font-size: 11pt;
-         color: #444;
-         line-height: 15pt;
-         }
-         button{
-         background-color: black;
-         width:245px;
-         border:none;
-         outline:0;
-         color: #fff;
-         font-family: 'Oswald', Helvetica, Arial, sans-serif;
-         font-size: 20px;
-         font-weight:bold;
-         padding: 8px 20px;
-         text-align: center;
-         text-decoration: none;
-         display: inline-block;
-         margin: 0px 550px;
-         cursor: pointer; 
-         text-transform:uppercase
-         }
-      </style>
-   </head>
-   <body id="top">
-      <!--Page 1-->
-      <page size="A4">
-         
-         </div>
-         <div class="cv">
-            <div id="header">
-               <div class="contactDetails">
-                  <ul>
-                     <li class="icon" title="Kirjuta mulle!"><a href="duncan050806@gmail.com"><i class="fa fa-envelope">&nbsp;&nbsp;</i>duncan050806@gmail.com</a></li>
-                     <li class="icon" title="Helista mulle!"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;(+853) 68295374</a></li>
-                 
-                  </ul>
-               </div>
+         <style>
+            body {
+               background: #fff;
+            }
+
+            page {
+               background: #fff;
+               display: block;
+               margin: 0 auto;
+               margin-bottom: 5mm;
+               margin-top: 5mm;
+            }
+
+            page[size="A4"] {
+               width: 210mm;
+               height: 297mm;
+            }
+
+            @page {
+               size: 210mm 297mm;
+               margin: 0;
+            }
+
+            @media print {
+
+               /* Print settings */
+               html,
+               body,
+               page {
+                  width: 210mm;
+                  height: 100%;
+                  margin: 0 !important;
+                  padding: 0 !important;
+                  overflow: hidden;
+               }
+
+               .no-overflow {
+                  overflow: hidden;
+               }
+
+               #Header,
+               #Footer {
+                  display: none !important;
+               }
+
+               size: A4 portrait;
+               /* ... the rest of the rules ... */
+            }
+
+            html,
+            body,
+            div,
+            span,
+            object,
+            iframe,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            blockquote,
+            pre,
+            abbr,
+            address,
+            cite,
+            code,
+            del,
+            dfn,
+            em,
+            img,
+            ins,
+            kbd,
+            q,
+            samp,
+            small,
+            strong,
+            sub,
+            sup,
+            var,
+            b,
+            i,
+            dl,
+            dt,
+            dd,
+            ol,
+            ul,
+            li,
+            fieldset,
+            form,
+            label,
+            legend,
+            table,
+            caption,
+            tbody,
+            tfoot,
+            thead,
+            tr,
+            th,
+            td,
+            article,
+            aside,
+            canvas,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            hgroup,
+            menu,
+            nav,
+            section,
+            summary,
+            time,
+            mark,
+            audio,
+            video {
+               border: 0;
+               font: inherit;
+               font-size: 100%;
+               margin: 0;
+               padding: 0;
+               vertical-align: baseline;
+            }
+
+            article,
+            aside,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            hgroup,
+            menu,
+            nav,
+            section {
+               display: block;
+            }
+
+            html,
+            body {
+               font-family: 'Lato', helvetica, arial, sans-serif;
+               font-size: 11pt;
+               color: #222;
+            }
+
+            .clear {
+               clear: both;
+            }
+
+            p {
+               line-height: 15pt;
+               margin-bottom: 4mm;
+               color: #444;
+               word-break: break-word;
+            }
+
+            a {
+               text-decoration: none;
+            }
+
+            a:hover {
+               text-decoration: underline;
+            }
+
+            a,
+            .fa-check,
+            .fa-arrow-right {
+               color: #da2d2d;
+            }
+
+            .cv {
+               width: 210mm;
+               height: 297mm;
+               background: #fff;
+               background-image: url("https://img.freepik.com/free-vector/hand-drawn-man-silhouette-playing-game_23-2149426007.jpg");
+            }
+
+            .mainDetails {
+               padding: 8mm 0 0 8mm;
+               background: #fff;
+            }
+
+            #name {
+               float: left;
+               text-transform: uppercase;
+               padding: 8.5mm 0 0 7mm;
+            }
+
+            #name h1 {
+               font-size: 33pt;
+               font-weight: 400;
+               font-family: 'Oswald', Helvetica, Arial, sans-serif;
+               line-height: 38pt;
+               color: #da2d2d;
+            }
+
+            #name h2 {
+               font-size: 18pt;
+               font-family: 'Oswald', Helvetica, Arial, sans-serif;
+               line-height: 20pt;
+            }
+
+            #mainArea,
+            #mainAreaTwo {
+               padding: 0 8mm;
+            }
+
+            #headshot {
+               width: 46mm;
+               float: left;
+               margin-top: 10mm;
+               margin-left: -.5mm;
+            }
+
+            #headshot img {
+               width: 100%;
+               height: auto;
+               -webkit-border-radius: 50%;
+               border-radius: 50%;
+            }
+
+            .contactDetails {
+               float: right;
+               margin: 10mm 8mm 0 0;
+               float: right;
+            }
+
+            .contactDetails ul {
+               list-style-type: none;
+               font-family: 'Oswald', Helvetica, Arial, sans-serif;
+            }
+
+            .contactDetails ul li {
+               line-height: 24pt;
+               color: #444;
+            }
+
+            .contactDetails ul li a,
+            a[href^=tel] {
+               color: #444;
+               padding: 4px 8px;
+               text-decoration: none;
+               -webkit-transition: all .1s ease-in;
+               -moz-transition: all .1s ease-in;
+               -o-transition: all .1s ease-in;
+               -ms-transition: all .1s ease-in;
+               transition: all .1s ease-in;
+            }
+
+            .contactDetails ul li a:hover {
+               box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+               color: #da2d2d;
+            }
+
+            .icon {
+               font-size: 14pt;
+            }
+
+            .bold {
+               font-weight: bold;
+            }
+
+            section {
+               border-top: 1mm dotted #444;
+               padding: 4mm 0 0 0;
+            }
+
+            section:first-child {
+               border-top: 0;
+               padding: 8mm 0 0 0;
+            }
+
+            section:last-child {
+               padding: 4mm 0 0 0;
+            }
+
+            .sectionTitle {
+               float: left;
+               width: 50mm;
+               margin-bottom: 6mm;
+            }
+
+            .sectionContent {
+               float: right;
+               width: 141mm;
+            }
+
+            .sectionTitle h1 {
+               font-family: 'Oswald', Helvetica, Arial, sans-serif;
+               font-weight: 400;
+               text-transform: uppercase;
+               font-size: 18pt;
+               color: #da2d2d;
+            }
+
+            .sectionContent h2 {
+               font-family: 'Oswald', Helvetica, Arial, sans-serif;
+               text-transform: uppercase;
+               font-size: 18pt;
+            }
+
+            .subDetails {
+               font-family: 'Lato', Helvetica, Arial, sans-serif;
+               font-size: 11pt;
+               font-weight: bold;
+               color: #da2d2d;
+            }
+
+            .nameDetails {
+               font-size: 11pt;
+               font-family: 'Lato', Helvetica, Arial, sans-serif;
+               color: #444;
+            }
+
+            .keySkills {
+               list-style-type: none;
+               -moz-column-count: 3;
+               -webkit-column-count: 3;
+               column-count: 3;
+               margin-bottom: 4mm;
+               font-size: 11pt;
+               color: #444;
+               line-height: 15pt;
+            }
+
+            .keySkills ul li {
+               margin-bottom: 6mm;
+            }
+
+            .clients {
+               list-style-type: none;
+               -moz-column-count: 1;
+               -webkit-column-count: 1;
+               column-count: 1;
+               margin-bottom: 4mm;
+               font-size: 11pt;
+               color: #444;
+               line-height: 15pt;
+               text-decoration: none;
+            }
+
+            .clients ul li {
+               margin-bottom: 6mm;
+            }
+
+            .list {
+               list-style-type: none;
+               -moz-column-count: 1;
+               -webkit-column-count: 1;
+               column-count: 1;
+               margin-bottom: 4mm;
+               font-size: 11pt;
+               color: #444;
+               line-height: 15pt;
+            }
+
+            button {
+               background-color: black;
+               width: 245px;
+               border: none;
+               outline: 0;
+               color: #fff;
+               font-family: 'Oswald', Helvetica, Arial, sans-serif;
+               font-size: 20px;
+               font-weight: bold;
+               padding: 8px 20px;
+               text-align: center;
+               text-decoration: none;
+               display: inline-block;
+               margin: 0px 550px;
+               cursor: pointer;
+               text-transform: uppercase
+            }
+
+            .list img {
+               width: 400px;
+            }
+         </style>
+      </head>
+
+      <body id="top">
+         <!--Page 1-->
+         <page size="A4">
+
             </div>
-            <div class="mainDetails">
-               <div id="headshot">
-                  <img id="avatar" src="https://i.imgur.com/JthnD1q.png" alt="Margus Lillemagi" title="See olen mina" />
-               </div>
-               <div id="name">
-                  <h1>Duncan</br>Ieong<span class="nameDetails">&nbsp;&nbsp;F5A 10</span></h1>
-               </div>
-               <div class="clear"></div>
-            </div>
-            <div id="mainArea">
-               <section>
-                  <article>
-                     <div class="sectionTitle">
-                        <h1>Personal Information</h1>
-                     </div>
-                     <div class="sectionContent">
-                        <p>
-                          
-                       
-<h2>Chinese Name</h2>                
-<h1>楊正濠</h1>  
-<h2>Birthday</h2>                
-<h1>2006/05/08</h1>                   <h2>Education</h2>
-<h1>Colégio Diocesano de São José (5a), Macau</h1>
-                        </p>
-                     </div>
-                  </article>
-                  <div class="clear"></div>
-               </section>
-               <section>
-                  <div class="sectionTitle">
-                     <h1>Hobbies & Skills</h1>
-                  </div>
-                  <div class="sectionContent">
-                     <ul class="keySkills">
-                        <li class="subDetails">Volleyball</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;School volleyball team</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Macau Men's Youth volleyball Team<a href="https://volleyball.org.mo/team/men-academic"> (details)</a></li>
-                        <li class="subDetails">Information Technology</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Powerpoint (Proficient)</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Python and C Language programming (Basic)</li>
+            <div class="cv">
+               <div id="header">
+                  <div class="contactDetails">
+                     <ul>
+                        <li class="icon" title="Kirjuta mulle!"><a href="duncan050806@gmail.com"><i
+                                 class="fa fa-envelope">&nbsp;&nbsp;</i>duncan050806@gmail.com</a></li>
+                        <li class="icon" title="Helista mulle!"><i class="fa fa-phone"
+                              aria-hidden="true"></i>&nbsp;&nbsp;(+853) 68295374</a></li>
 
                      </ul>
                   </div>
-                  <div class="clear">
-               </section>
- 
-               <section>
-                  <div class="sectionTitle">
-                     <h1>Awards</h1>
+               </div>
+               <div class="mainDetails">
+                  <div id="headshot">
+                     <img id="avatar" src="img/Icon.jpg" alt="Margus Lillemagi"
+                        title="See olen mina" />
                   </div>
-                  <div class="sectionContent">
-                     <ul class="list">
-                        <li><span class="subDetails">2019&nbsp;&nbsp;</span><span class="bold">Cross-Strait Four-Region U14 Men's Volleyball Invitational Tournament</span> 6th place<a href="https://www.vbahk.org.hk/article/1165"> (details)</a></li>
-                       
-                        <li><span class="subDetails">2020&nbsp;&nbsp;</span><span class="bold">DSEDJ / Volleyball Association of Macau, China <br>
-43th Campeonato Escolar de Voleibol</span> 3rd place</li>
-                       
-                        <li><span class="subDetails">2021&nbsp;&nbsp;</span><span class="bold">DSEDJ / Volleyball Association of Macau, China <br>
-44th Campeonato Escolar de Voleibol</span> 3rd place<a href="https://www.macausports.com.mo/news/show_3048.html"> (details)</a></li>
-                       
-                        <li><span class="subDetails">2021&nbsp;&nbsp;</span><span class="bold">Macau Youth Men's and Women's Volleyball Tournament National Games Qualifying
-Tournament <br>
-44th Campeonato Escolar de Voleibol</span><a href="https://volleyball.org.mo/news/%E6%BE%B3%E9%96%80%E9%9D%92%E5%B0%91%E
+                  <div id="name">
+                     <h1>Duncan</br>Ieong<span class="nameDetails">&nbsp;&nbsp;F5A 10</span></h1>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+               <div id="mainArea">
+                  <section>
+                     <article>
+                        <div class="sectionTitle">
+                           <h1>Personal Information</h1>
+                        </div>
+                        <div class="sectionContent">
+                           <p>
+
+
+                           <h2>Chinese Name</h2>
+                           <h1>楊正濠</h1>
+                           <h2>Birthday</h2>
+                           <h1>2006/05/08</h1>
+                           <h2>Education</h2>
+                           <h1>Colégio Diocesano de São José (5a), Macau</h1>
+                           </p>
+                        </div>
+                     </article>
+                     <div class="clear"></div>
+                  </section>
+                  <section>
+                     <div class="sectionTitle">
+                        <h1>Hobbies & Skills</h1>
+                     </div>
+                     <div class="sectionContent">
+                        <ul class="keySkills">
+                           <li class="subDetails">Volleyball</li>
+                           <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;School volleyball team</li>
+                           <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Macau Men's Youth volleyball Team<a
+                                 href="https://volleyball.org.mo/team/men-academic"> (details)</a></li>
+                           <li class="subDetails">Information Technology</li>
+                           <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Powerpoint (Proficient)</li>
+                           <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Python and C Language programming
+                              (Basic)</li>
+
+                        </ul>
+                     </div>
+                     <div class="clear">
+                  </section>
+
+                  <section>
+                     <div class="sectionTitle">
+                        <h1>Awards</h1>
+                     </div>
+                     <div class="sectionContent">
+                        <ul class="list">
+                           <li><span class="subDetails">2019&nbsp;&nbsp;</span><span class="bold">Cross-Strait
+                                 Four-Region U14 Men's Volleyball Invitational Tournament</span> 6th place<a
+                                 href="https://www.vbahk.org.hk/article/1165"> (details)</a></li>
+                           <img src="img/1.jpg" alt="Award Image N">
+
+                           <li><span class="subDetails">2020&nbsp;&nbsp;</span><span class="bold">DSEDJ / Volleyball
+                                 Association of Macau, China <br>
+                                 43th Campeonato Escolar de Voleibol</span> 3rd place</li>
+                           <img src="img/1.jpg" alt="Award Image N">
+                           <li><span class="subDetails">2021&nbsp;&nbsp;</span><span class="bold">DSEDJ / Volleyball
+                                 Association of Macau, China <br>
+                                 44th Campeonato Escolar de Voleibol</span> 3rd place<a
+                                 href="https://www.macausports.com.mo/news/show_3048.html"> (details)</a></li>
+                           <img src="img/2.jpg" alt="Award Image N">
+                           <li><span class="subDetails">2021&nbsp;&nbsp;</span><span class="bold">Macau Youth Men's and
+                                 Women's Volleyball Tournament National Games Qualifying
+                                 Tournament <br>
+                                 44th Campeonato Escolar de Voleibol</span><a href="https://volleyball.org.mo/news/%E6%BE%B3%E9%96%80%E9%9D%92%E5%B0%91%E
 5%B9%B4%E7%94%B7%E3%80%81%E5%A5%B3%E6%8E%92%E5%87%BA%E6%88
 %B0%E5%85%A8%E9%81%8B%E8%B3%87%E6%A0%BC%E8%B3%BD"> (details)</a></li>
-                       
-                        <li><span class="subDetails">2021&nbsp;&nbsp;</span><span class="bold">14th National Student Games Beach Volleyball Representative Trials</span> 2nd place</li>
-                                               <li><span class="subDetails">2022&nbsp;&nbsp;</span><span class="bold">DSEDJ / Volleyball Association of Macau, China <br>
-45th Campeonato Escolar de Voleibol</span> 3rd place</li>
-                                               <li><span class="subDetails">2023&nbsp;&nbsp;</span><span class="bold">DSEDJ / Volleyball Association of Macau, China <br>
-46th Campeonato Escolar de Voleibol</span> 2nd place</li>
-                                               <li><span class="subDetails">2023&nbsp;&nbsp;</span><span class="bold">Greater Bay Area volleyball Championship</span> 3rd place<a href="http://sports.happymacao.com/sport/view/3147.html"> (details)</a></li>
-                     </ul>
-                  </div>
-                  <div class="clear"></div>
-               </section>
-               <section>
-                  <div class="sectionTitle">
-                     <h1>Languages</h1>
-                  </div>
-                  <div class="sectionContent">
-                     <ul class="list">
-                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Cantonese and Mandarin (Fluent)</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;English (Intermediate)</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Portuguese (Basic)</li>
-                     </ul>
-                  </div>
-                  <div class="clear"></div>
-               </section>
+                           <img src="img/3.jpg" alt="Award Image N">
+                           <li><span class="subDetails">2021&nbsp;&nbsp;</span><span class="bold">14th National Student
+                                 Games Beach Volleyball Representative Trials</span> 2nd place</li>
+                           <img src="img/4.jpg" alt="Award Image N">
+                           <li><span class="subDetails">2022&nbsp;&nbsp;</span><span class="bold">DSEDJ / Volleyball
+                                 Association of Macau, China <br>
+                                 45th Campeonato Escolar de Voleibol</span> 3rd place</li>
+                           <img src="img/5.jpg" alt="Award Image N">
+                           <li><span class="subDetails">2023&nbsp;&nbsp;</span><span class="bold">DSEDJ / Volleyball
+                                 Association of Macau, China <br>
+                                 46th Campeonato Escolar de Voleibol</span> 2nd place</li>
+                           <img src="img/6.jpg" alt="Award Image N">
+                           <li><span class="subDetails">2023&nbsp;&nbsp;</span><span class="bold">Greater Bay Area
+                                 volleyball Championship</span> 3rd place<a
+                                 href="http://sports.happymacao.com/sport/view/3147.html"> (details)</a></li>
+                           <img src="img/7.jpg" alt="Award Image N">
+                              
+                           <li><span class="subDetails">2023&nbsp;&nbsp;</span><span class="bold"> East Asian Youth Games
+                           </span>5th place</li>
+                           <img src="img/8.jpg" alt="Award Image N">
+                           <li><span class="subDetails">2023&nbsp;&nbsp;</span><span class="bold">First National Student (Youth) Games (Campus Group) Volleyball Preliminaries
+                           </span>25th place</li>
+                        </ul>
+                     </div>
+                     <div class="clear"></div>
+                  </section>
+                  <section>
+                     <div class="sectionTitle">
+                        <h1>Languages</h1>
+                     </div>
+                     <div class="sectionContent">
+                        <ul class="list">
+                           <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Cantonese and Mandarin (Fluent)</li>
+                           <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;English (Intermediate)</li>
+                           <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Portuguese (Basic)</li>
+                        </ul>
+                     </div>
+                     <div class="clear"></div>
+                  </section>
+               </div>
             </div>
-         </div>
-      </page>
+         </page>
+      </body>
+      <html>
+      <!-- partial -->
+
    </body>
-<html>
-<!-- partial -->
-  
-</body>
-</html>
+
+   </html>
